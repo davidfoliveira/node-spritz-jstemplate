@@ -1,0 +1,31 @@
+{
+  "author": "David Oliveira <d.oliveira@prozone.org>",
+  "name": "spritz-jstemplate",
+  "description": "A JSTemplate templating module for Spritz web framework",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidfoliveira/node-spritz-jstemplate/"
+  },
+  "main": "./jstemplate",
+  "bin": { },
+  "dependencies": {
+    "jstemplate": ">=0.1.0"
+  },
+  "devDependencies": {
+    "spritz": ">=0.5.1"
+  },
+  "optionalDependencies": {},
+  "license": "Copyleft",
+  "engines": {
+    "node": ">=0.10.5"
+  },
+  "keywords": [
+    "spritz",
+    "web",
+    "framework",
+    "templating",
+    "template",
+    "jstemplate"
+  ]
+}
