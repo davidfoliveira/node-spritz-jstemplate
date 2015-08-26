@@ -2,13 +2,13 @@
 
 # How to use
 
-var
-	spritz = require('spritz');
+	var
+	    spritz = require('spritz');
 
-// Use it!
-spritz.use(require('spritz-jstemplate'));
+	// Use it!
+	spritz.use(require('spritz-jstemplate'));
 
-// On a route
-spritz.on('/',function(req,res){
-	spritz.template(req,res,'file',{my:'args'},200,{'content-type':'text/html; charset=UTF-8'});
-});
+	// On a route
+	spritz.on('/',function(req,res){
+	    spritz.template(req,res,'file',{my:'args'},200,{'content-type':'text/html; charset=UTF-8'});
+	});
