@@ -25,12 +25,13 @@ exports.init = function(args) {
 				return self.json(req,res,{error:{where:'modules.jst',detail:err}},500);
 			}
 
-			// Send data
-			self.text(req,res,output,status,headers);
+			if ( !headers )
+				headers = {};
+			if ( !headers['content-type'] )
+				headers['content-type'] = 'text/html; charset=UTF-8';
 
-			// Call the callback
-			if ( callback )
-				callback(null,output);
+			// Send data
+			self.text(req,res,output,status,headers,callback);
 		});
 	};
 
